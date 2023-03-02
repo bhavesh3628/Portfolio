@@ -1,0 +1,548 @@
+* {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      text-decoration: none;
+      font-family: Hind;
+      box-sizing: border-box;
+}
+
+body {
+      background: #ffffff;
+}
+
+header {
+      width: 100%;
+      height: 80px;
+      background: #191919;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 100px;
+}
+
+.logo {
+      font-family: Product Sans;
+      letter-spacing: 2px;
+      /* padding-left: -3px; */
+      font-size: 44px;
+      padding-top: 5px;
+      font-weight: bold;
+      color: #fefefe;
+}
+
+.hamburger {
+      display: none;
+}
+
+.nav-bar ul {
+      display: flex;
+
+}
+
+.nav-bar ul li a {
+      display: block;
+      color: #fefefe;
+      font-size: 20px;
+      padding: 10px 25px;
+      border-radius: 50px;
+      transition: 0.37s;
+      margin: 0 5px;
+}
+
+.nav-bar ul li a:hover {
+      color: #09080e;
+      background: #fefefe;
+}
+
+.nav-bar ul li a.active {
+      color: #11101b;
+      background: #fefefe;
+}
+
+@media only screen and (max-width:1320px) {
+      header {
+            padding: 0 50px;
+      }
+}
+
+@media only screen and (max-width:1100px) {
+      header {
+            padding: 0 30px;
+      }
+}
+
+.fits {
+      position: fixed;
+      z-index: 1;
+}
+
+.jumpbg {
+      height: 55vh;
+      background: rgb(14, 111, 92);
+      background: linear-gradient(6deg, rgba(14, 111, 92, 1) 0%, rgba(0, 129, 137, 1) 7%, rgba(10, 163, 184, 1) 43%, rgba(0, 178, 255, 1) 86%);
+      border-radius: 0px 0 105px 105px;
+}
+
+.tet1 {
+      padding: 35px;
+      font-family: Product Sans;
+      position: absolute;
+      transform: translateY(20%);
+      margin-left: 70px;
+}
+
+.tet1 h1 {
+      z-index: -1;
+      border: 6px solid #fefefe8e;
+      font-family: Poppins;
+      color: rgb(20, 20, 20);
+      border-radius: 24px;
+      padding: 11px;
+      padding-left: 13px;
+      padding-right: 13px;
+      margin-top: 18px;
+      letter-spacing: -1px;
+      display: inline;
+      font-size: 57px;
+}
+
+
+.tet1 h1 {
+      /* text-transform: uppercase; */
+      background-image: linear-gradient(-225deg,
+                  #000000 0%,
+                  #325a07a2 29%,
+                  #170b71 67%,
+                  #000000 100%);
+      background-size: auto auto;
+      background-clip: border-box;
+      background-size: 200% auto;
+      color: #fff;
+      background-clip: text;
+      text-fill-color: transparent;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: textclip 5s linear infinite;
+      display: inline-block;
+      /* font-size: 190px; */
+}
+
+
+@keyframes textclip {
+      to {
+            background-position: 200% center;
+      }
+}
+
+.tet1 h2 {
+      margin-top: 38px;
+      font-family: Poppins;
+      font-size: 59px;
+      font-weight: bolder;
+      color: white;
+      margin-left: 16%;
+}
+
+.tet1 p {
+      margin-top: -3px;
+      margin-left: 16.5%;
+      color: rgb(228, 228, 228);
+      letter-spacing: 1px;
+      font-family: Product sans;
+      font-weight: lighter;
+      font-size: 27px;
+}
+
+.me {
+      display: inline;
+      float: right;
+      margin-right: 12%;
+      margin-top: 6%;
+      border-radius: 280px;
+      width: 25%;
+      filter: drop-shadow(7px 7px 7px #76767680);
+      transition: 0.5s;
+}
+
+.me:hover {
+      transition: all is ease;
+      filter: drop-shadow(7px 7px 7px #666666);
+      -webkit-filter: drop-shadow(7px 7px 7px #434343);
+      scale: 1.03;
+}
+
+.tet2 {
+      /* color: black; */
+      margin-left: 14.3%;
+      margin-top: 10px;
+      color: #000000c2;
+      font-weight: lighter;
+      font-size: 25px;
+      position: absolute;
+}
+
+.changetext {
+      margin-top: 6%;
+      margin-left: 13.5%;
+      font-size: 27px;
+}
+
+.change_content:after {
+      content: '';
+      animation: changetext 7s infinite linear;
+      color: rgb(0, 0, 0);
+      font-family: Poppins;
+      letter-spacing: -1px;
+}
+
+@keyframes changetext {
+      0% {
+            content: "/Designer";
+      }
+
+      33% {
+            content: "/Coder";
+      }
+
+      66% {
+            content: "/Programmer";
+      }
+
+      100% {
+            content: "/Web Developer !";
+      }
+}
+
+.butn {
+      display: inline-block;
+      background-color: #1672f1;
+      border-radius: 11px;
+      border: none;
+      /* border: 4px double #cccccc; */
+      color: #ffffff;
+      text-align: center;
+      font-size: 27px;
+      padding: 16px;
+      width: 190px;
+      transition: all 0.5s;
+      cursor: pointer;
+      margin: 15px;
+      margin-top: 20px;
+      filter: drop-shadow(2px 7px 7px #3e3e3e8e);
+      margin-left: 30px;
+}
+
+.butn span {
+      font-family: product sans;
+      font-weight: light;
+      letter-spacing: 0.5px;
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      transition: 0.5s;
+}
+
+.butn span:after {
+      content: '\00bb';
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      right: -20px;
+      transition: 0.5s;
+}
+
+/* .butn:hover {
+      background-color: #f7c2f9;
+} */
+
+.butn:hover span {
+      /* scale: 1.03; */
+      padding-right: 18px;
+}
+
+.butn:hover span:after {
+      opacity: 1;
+      right: 0;
+}
+
+.tab {
+      margin-left: 0%;
+      margin-top: 6%;
+      padding-left: 100px;
+      padding-right: 200px;
+      padding-top: 22px;
+      border-radius: 50px;
+      padding-bottom: 50px;
+      background-color: #0b0b0ce7;
+      box-shadow: 1px 12px 45px rgba(2, 2, 2, 0.912);
+      color: white;
+      margin-left: 15px;
+      margin-right: 15px;
+}
+
+.tabc1 {
+      width: 35rem
+}
+
+.tabc1 h1 {
+      margin-left: 22.5%;
+      font-family: Poppins;
+      font-size: 55px;
+      margin-bottom: 20px;
+}
+
+.tabc1 img {
+      width: 97%;
+      object-fit: cover;
+      border-radius: 14px;
+      transition: 0.5s;
+      box-shadow: 3px 2px 35px rgba(232, 232, 232, 0.152);
+
+}
+
+.tabc1 img:hover {
+      scale: 102.5%;
+      transition: all is ease;
+      box-shadow: 3px 2px 55px rgba(232, 232, 232, 0.170);
+
+}
+
+.tabc2 {
+      padding-top: 110px;
+      letter-spacing: 0.8px;
+}
+
+.tabc2 div h1 {
+      font-family: product sans;
+      margin-bottom: 23px;
+      letter-spacing: 0.8px;
+      color: white;
+      font-weight: lighter;
+      text-align: left;
+      font-size: 38px;
+}
+
+.tabc2 div p {
+      text-align: justify;
+      font-family: Hind;
+      font-weight: lighter;
+      font-size: 20px;
+}
+
+.cssbuttons-io {
+      margin-top: 10px;
+      position: relative;
+      cursor: pointer;
+      font-weight: 500;
+      font-size: 20px;
+      letter-spacing: 0.05em;
+      background: #121212ce;
+      border-radius: 0.8em;
+      border: none;
+      box-shadow: 3px 2px 35px rgba(232, 232, 232, 0.107);
+      transition: 0.8s;
+      color: ghostwhite;
+      overflow: hidden;
+}
+
+.cssbuttons-io svg {
+      width: 1.2em;
+      height: 1.2em;
+      margin-right: 0.7em;
+}
+
+.cssbuttons-io:hover {
+      /* border: 0.1px solid rgba(255, 255, 255, 0.332); */
+      box-shadow: 3px 2px 35px rgba(232, 232, 232, 0.26);
+}
+
+.cssbuttons-io span {
+      position: relative;
+      font-family: Product Sans;
+      z-index: 10;
+      transition: color 0.4s;
+      display: inline-flex;
+      z-index: 0;
+      align-items: center;
+      padding: 0.9em 1.3em 0.8em 1.1em;
+}
+
+.cssbuttons-io::before,
+.cssbuttons-io::after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 110%;
+      z-index: 0;
+}
+
+.cssbuttons-io::before {
+      content: "";
+      background: linear-gradient(to right, #8e2de2, #4a00e0);
+      width: 123%;
+      left: -10%;
+      transform: skew(30deg);
+      transition: transform 0.6s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.cssbuttons-io:hover::before {
+      transform: translate3d(100%, 0, 0);
+}
+
+.cssbuttons-io:active {
+      transform: scale(0.95);
+}
+
+html {
+      scroll-behavior: smooth;
+}
+
+.headng {
+      text-align: center;
+      font-family: Product sans;
+      font-size: 60px;
+      margin-top: 8%;
+      font-weight: bolder;
+      color: #252525;
+}
+
+.Projects {
+      display: flex;
+      gap: 3%;
+      margin-left: 8%;
+      margin-top: 4%;
+      margin-bottom: 3%;
+}
+
+.card {
+      height: 434px;
+      width: 450px;
+      position: relative;
+      transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+      border-radius: 1em;
+      box-shadow: 0 0 20px 8px #d0d0d0;
+      overflow-y: hidden;
+}
+
+.card:hover {
+      scale: 108.5%;
+      box-shadow: 2px 7px 20px 8px #202020aa;
+}
+
+/*Image*/
+.card-image {
+      height: 62%;
+      border-radius: 16.5px;
+      width: 100%;
+      position: absolute;
+      transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+      /* background: #0a3394; */
+}
+
+/*Description */
+.card-description {
+      display: flex;
+      position: absolute;
+      gap: 1em;
+      flex-direction: column;
+      background-color: #2a292992;
+      backdrop-filter: blur(0.1px);
+      height: 23%;
+      /* height: 90%; */
+      bottom: 0;
+      border-radius: 1em 1em 0 0;
+      color: whitesmoke;
+      transition: all 0.6s cubic-bezier(0.645, 0.045, 0.355, 1);
+      padding: 1rem;
+}
+
+.card-description h2 {
+      font-family: Product Sans;
+      font-weight: lighter;
+      margin-top: -12px;
+      margin-left: 10px;
+}
+
+/*Text*/
+.text-title {
+      font-size: 29px;
+      font-family: Poppins;
+      font-weight: 700;
+}
+
+.text-body {
+      font-size: 19px;
+      line-height: 150%;
+      margin-top: -8px;
+      font-family: Product sans;
+      font-weight: lighter;
+      margin-left: 12px;
+}
+
+
+/* Hover states */
+
+.card:hover .card-description {
+      /* transform: translateY(11.5%); */
+      padding-top: 13%;
+      height: 100%;
+      backdrop-filter: blur(9px);
+}
+
+#card1 .card-image {
+      background: url(photos/PlayStation52.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      height: 120%;
+}
+
+#card2 .card-image {
+      background: url(photos/horizon.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100%;
+
+}
+
+#card3 .card-image {
+      background: linear-gradient(to top, #0a3394, #4286f4);
+      background-size: cover;
+      height: 100%;
+}
+
+.buton {
+      margin-top: -2px;
+      padding: 14px 25px;
+      border: unset;
+      border-radius: 0.2em;
+      color: #212121;
+      z-index: 1;
+      background: #e8e8e8;
+
+      position: relative;
+      font-family: Poppins;
+      font-weight: 1000;
+      font-size: 20px;
+      transition: all 250ms;
+      overflow: hidden;
+}
+
+.buton:hover {
+      cursor: pointer;
+}
+
+.buton:hover::before {
+      width: 100%;
+}
+
+#skill {
+      font-family: Product sans;
+      letter-spacing: 1.9px;
+      text-align: left;
+      margin-left: 8%;
+      padding-top: 5%;
+      padding-bottom: 3%;
+      font-size: 60px;
+}
